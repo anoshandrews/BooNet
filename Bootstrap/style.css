@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: "netflix-sans-regular";
+    src: url(assets/NetflixSans_W_Rg.ttf);
+}
+@font-face {
+    font-family: "netflix-sans-bold";
+    src: url(assets/NetflixSans_W_Bd.ttf);
+}
+@font-face {
+    font-family: "netflix-sans-semibold";
+    src: url(assets/NetflixSans_W_Md.ttf);
+}
+
+*{
+    font-family: "Arimo", "Helvetica Neue";
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Bebas Neue";
+    height: 100vh;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,.6)), url(assets/IN_en_20240603_popsignuptwoweeks_perspective_alpha_website_medium.jpg
+    );
+    background-size: cover;
+    background-position: 50%;
+    height: 90vh;
+
+}
+nav img{
+    width:200px;
+}
+.red-btn{
+    font-family: "netflix-sans-semibold";
+    width:90px;
+    font-weight: normal;
+    background-color: rgb(243, 11, 11);
+    color: white;
+    border-radius: 4px;
+    border-style: none;
+    padding: 2%;
+    padding:7px 15px;
+    font-size: 15px;
+}
+.trans-btn{
+    font-family: "netflix-sans-semibold";
+    width:90px;
+    font-weight: normal;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.5vh;
+    border-style: none;
+    padding: 2%;
+    padding:7px 15px;
+    font-size: 15px;
+    border: 0.5px solid white;
+
+}
+.red-btn:hover{
+    background-color: rgb(172, 6, 6);
+}
+.hero-title{
+    font-family: 'netflix-sans-bold';
+    font-size:3rem;
+    font-weight:900;
+}
+.hero-first-p{
+    font-size: 2rem;
+    font-weight:400;
+}
+.hero-second-p{
+    font-size: 1.5rem;
+    font-weight:400;
+    line-height:1.875rem;
+}
+form{
+    width: 60%;
+}
+form #floatingInput{
+    color: #c3bebe;
+}
+form .form-control:focus{
+    border-color:#6d6d6d;
+    box-shadow:none;
+    border-width:medium;
+}
+form .form-floating>.form-control:focus~label{
+    color: rgba(215, 203, 203, 0.7);
+}
+form .form-floating>.form-control:focus~label::after{
+    background-color: transparent;
+}
+form .form-floating{
+    width: 30%;
+}
+
+form #floatingInput{
+    background: transparent;
+}
+.email-or-phone{
+    width:300px;
+    height: 60px;
+    border-radius: 5px;
+    border: 1px solid rgb(162, 160, 160);
+    padding-left: 20px;
+    background-color: rgba(220, 220, 220, 0.9);
+}
+ 
+
+form label{
+    color: rgba(226, 221, 221, 0.7);
+    margin-left: 10px;
+}
+.get-started-btn{
+    height: 60px;
+    width: auto;
+    font-size: 1.5rem;
+    padding-right:25px;
+    padding-left:25px;
+}
+.get-started-btn::after{
+    content: "\276F";
+    margin-left: 5px;
+}
+.section-title{
+    font-size:3rem;
+    font-weight: 900;
+}
+.section-paragraph{
+    font-size:1.5rem;
+    font-weight:400;
+}
+.separator{
+    background-color: #323131;
+    height: 0.5vh;
+    width: 100%;
+}
+.accordion-item{
+    background-color: rgb(62, 61, 61);
+    font-size: medium;
+}
+.accordion{
+    display: flex;
+    justify-content: center;
+}
+footer a{
+    color:grey
+}
+ul{
+    list-style-type:none;
+}
+.button-align{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    gap: 10px
+}
+.form-control{
+    background-color: transparent;
+}
+.second-align{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+@media (max-width:767px) {
+    .button-align{
+        flex-direction: column;
+    }
+    
+    
+}
+@media (max-width: 800px){
+    .second-align{
+        flex-direction: column;
+    }
+    
+}
